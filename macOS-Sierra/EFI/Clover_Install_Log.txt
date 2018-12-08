@@ -1,0 +1,50 @@
+
+Clover EFI installer log - Mon Feb 26 20:23:30 +07 2018
+Installer version: v2.4k r4411 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *250.1 GB   disk0
+   1:                        EFI EFI                     524.3 MB   disk0s1
+   2:       Microsoft Basic Data                         128.8 GB   disk0s2
+   3:         Microsoft Reserved                         16.8 MB    disk0s3
+   4:                  Apple_HFS macOS                   120.0 GB   disk0s4
+   5:                 Apple_Boot Recovery HD             650.0 MB   disk0s5
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk1
+   1:           Windows Recovery                         471.9 MB   disk1s1
+   2:                        EFI NO NAME                 104.9 MB   disk1s2
+   3:                Windows_LDM                         999.6 GB   disk1s3
+   4:     Microsoft LDM Metadata                         1.0 MB     disk1s4
+   5:         Microsoft Reserved                         728.6 KB   disk1s5
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *8.0 GB     disk2
+   1:                  Apple_HFS installUSB              8.0 GB     disk2s1
+
+======================================================
+Backing up EFI files
+
+Backing up stage2 file /Volumes/installUSB/EFIROOTDIR/boot  to /Volumes/installUSB/EFI-Backups/r4061/2018-02-26-20h23/boot
+Backing up /Volumes/installUSB/EFIROOTDIR/EFI folder to /Volumes/installUSB/EFI-Backups/r4061/2018-02-26-20h23/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/installUSB
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/installUSB
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/Volumes/installUSB'
+
+
+Theme 'BGM' (defined in config.plist) not found !
+Using default theme 'bluemac'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
